@@ -62,7 +62,7 @@ const handleSubmit = (e) => {
                      variants={FadeUp(0.2)}
                      initial="initial"
                      animate="animate"
-                    className='text-5xl lg:text-xl font-bold '> Join Us in Changing Lives</motion.h1>
+                    className='text-5xl lg:text-6xl font-bold '> Join Us in Changing Lives</motion.h1>
                     <motion.p
                     variants={FadeUp(0.4)}
                     initial="initial"
