@@ -1,5 +1,6 @@
 import React from 'react'
 import banner2 from "../../src/assets/banner2.jpg"
+import { Link } from "react-router-dom";
 
 const Banner2 = () => {
   return (
@@ -19,7 +20,7 @@ const Banner2 = () => {
 
 </li>
             </ul>
-              <button className='btn-primary'> Get Started </button>
+              <Link to="started"><button className='btn-primary'> Get Started </button></Link>
          </div>
           {/* img container */}
            <div>
@@ -34,3 +35,4 @@ const Banner2 = () => {
   ) }
 
 export default Banner2
+

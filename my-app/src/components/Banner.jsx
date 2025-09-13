@@ -1,8 +1,9 @@
 import React from 'react'
 import banner from "../../src/assets/banner.jpg"
+import { Link } from "react-router-dom";
 const Banner = () => {
   return (
-   <div className='bg-slate-100 dark:bg-slate-900 dark:text-white'>
+   <div className='bg-slate-100 dark:bg-slate-800 dark:text-white'>
     <div className='container md:h-[500px] flex items-center justify-center py-10'>
        <div className='grid grid-cols-1 items-center gap-4 sm:grid-cols-2'>
          {/* img container */}
@@ -21,7 +22,7 @@ const Banner = () => {
                 <li className='font-medium'>It helps reduce overcrowding in shelters and supports animal welfare.</li>
                 <li className='font-medium'>Pets bring joy, companionship, and emotional benefits to their adoptive families.</li>
             </ul>
-            <button className='btn-primary'> Get Started </button>
+            <Link to="started"><button className='btn-primary'> Get Started </button></Link>
          </div>
        </div>
     </div>
@@ -31,3 +32,4 @@ const Banner = () => {
 }
 
 export default Banner
+

@@ -39,14 +39,14 @@ const Footer = () => {
                 <div className='px-4 py-8'>
                     <h1 className='mb-3 text-justify text-xl sm:text-left sm:text-3xl'>
                         <a href="/#home" className='uppercase'>
-                        E & A
-                            <span className='inline-block font-bold text-primary'>
-                             Protection Fund
+                        E & A 
+                            <span className='inline-block font-bold text-primary '>
+                              Protection Fund
                             </span>
                         </a>
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Join Us in Protecting Nature and Animal Life
                     </p>
                     <div className='flex items-center gap-3 mt-3'>
                         <FaLocationArrow />
@@ -108,3 +108,4 @@ const Footer = () => {
 }
 
 export default Footer
+
