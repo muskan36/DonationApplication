@@ -27,7 +27,7 @@ const Donate = () => {
       const { data: { user } } = await supabase.auth.getUser();
 
       // Step 2 - Create Razorpay order from server
-      const response = await fetch("http://localhost:8000/api/v1/create-order", {
+      const response = await fetch("https://donationapplication.onrender.com", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ amount }),
@@ -57,7 +57,7 @@ const Donate = () => {
         theme: { color: "#16a34a" },
         handler: async function (response) {
           // Step 4 - Save donation to Supabase after success
-          const saveResponse = await fetch("http://localhost:8000/api/v1/save-donation", {
+          const saveResponse = await fetch("https://donationapplication.onrender.com", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({
