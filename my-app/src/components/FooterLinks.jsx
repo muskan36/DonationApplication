@@ -1,17 +1,21 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
-const FooterLinks = ({links}) => {
+const FooterLinks = ({ links }) => {
   return (
     <>
-        {links.map((link)=>(
-            <li
-            key={link.name}
-            className='cursor-pointer transition-all duration-300 hover:translate-x-[2px]'>
-                <a href="">{link.name}</a>
-            </li>
-        ))}
+      {links.map((data, index) => (
+        <li key={index}>
+          <Link
+            to={data.link}
+            className="hover:text-yellow-400 duration-200"
+          >
+            {data.name}
+          </Link>
+        </li>
+      ))}
     </>
-  )
-}
+  );
+};
 
 export default FooterLinks;

@@ -43,7 +43,7 @@ const PrivacyPolicy = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl sm:tracking-tight lg:text-6xl">
+          <h1 className="text-4xl font-extrabold text-gray-900 dark:text-white sm:text-5xl sm:tracking-tight lg:text-6xl mt-10">
             Privacy Policy
           </h1>
           <p className="mt-5 max-w-3xl mx-auto text-xl text-gray-600 dark:text-gray-300">
@@ -135,13 +135,18 @@ const PrivacyPolicy = () => {
 
             <h2 className="text-2xl font-bold text-gray-900 dark:text-white mt-10 mb-4">Contact Us</h2>
             <p className="text-gray-600 dark:text-gray-300 mb-8">
-              If you have any questions about this Privacy Policy, please contact us at:
+             If you have any questions about our platform or policies, please contact us at:
             </p>
             <div className="bg-green-50 dark:bg-gray-700 p-6 rounded-lg mb-8">
-              <p className="text-gray-800 dark:text-gray-200 font-medium">Environment and Animal Protection Fund</p>
-              <p className="text-gray-600 dark:text-gray-300">123 Conservation Way, Eco City, EC 12345</p>
-              <p className="text-gray-600 dark:text-gray-300">Email: privacy@environmentfund.org</p>
-              <p className="text-gray-600 dark:text-gray-300">Phone: (123) 456-7890</p>
+              <p className="text-gray-800 dark:text-gray-200 font-medium">Eco & Animal Protection Initiative</p>
+              <p className="text-gray-600 dark:text-gray-300">Gorakhpur, Uttar Pradesh, 273015</p>
+              <p className="text-gray-600 dark:text-gray-300">Email: ritikayadav1101@gmail.com</p>
+              <p className="text-gray-600 dark:text-gray-300">Phone: +91 9305813469</p>
+              <p className="text-gray-600 dark:text-gray-300">Developer: Ritika Yadav</p>
+
+              <p className="mt-2 text-sm text-gray-600">
+                 This website is a demonstration project created for educational and portfolio purposes to showcase a donation platform for environmental and animal protection initiatives.
+              </p>
             </div>
           </div>
         </motion.div>

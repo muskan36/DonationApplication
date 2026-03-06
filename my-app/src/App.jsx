@@ -54,9 +54,14 @@ import Vision from "./pages/Vision";
 import Mission from "./pages/Mission";
 import BlogDetail from './pages/BlogDetail';
 import AboutUs from "./pages/AboutUs";
+import ContactUs from './pages/ContactUs';
 import OurServices from "./pages/OurServices"
 import PrivacyPolicy from './pages/PrivacyPolicy';
+import RefundPolicy from './pages/RefundPolicy';
+import TermsConditions from './pages/TermsConditions';
 import Login from "./pages/Login";
+import SignUp from "./pages/SignUp";
+import Donation from "./pages/Donation";
 import GettingStarted from "./pages/GettingStarted"
 
 const App = () => {
@@ -77,10 +82,15 @@ const App = () => {
             </>
           } />
           <Route path="/about" element={<AboutUs />} />
+          <Route path="/contact" element={<ContactUs />} />
           <Route path="/started" element={<GettingStarted />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp/>} />
+          <Route path="/donate" element={<Donation />} />
           <Route path="/services" element={<OurServices />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/refund" element={<RefundPolicy />} />
+          <Route path="/terms" element={<TermsConditions />} />
           <Route path="/vision" element={<Vision />} />
           <Route path="/mission" element={<Mission />} />
            <Route path="/blogs/all" element={<BlogDetail />} />

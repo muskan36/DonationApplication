@@ -148,7 +148,7 @@ const Navbar = () => {
             {/* Logo Section */}
             <div className="text-xl md:text-xl text-white uppercase">
               <Link to="/">
-                E & A <span className="inline-block font-bold text-primary uppercase">Protection Fund</span>
+                ECO <span className="inline-block font-bold text-primary uppercase">& Animal Protection Initiative</span>
               </Link>
             </div>
             
@@ -169,6 +169,9 @@ const Navbar = () => {
                         <Link to="/about">About Us</Link>
                       </li>
                       <li className="p-2 hover:bg-violet-200">
+                        <Link to="/contact">Contact Us</Link>
+                      </li>
+                      <li className="p-2 hover:bg-violet-200">
                         <Link to="/privacy">Privacy Policy</Link>
                       </li>
                     </ul>
@@ -178,12 +181,16 @@ const Navbar = () => {
                 <li>
                   <Link to="/about">About Us</Link>
                 </li>
+                <li>
+                  <Link to="/contact">Contact Us</Link>
+                </li>
+                
                 
                 <li>
                   <div className="flex items-center gap-4">
                     <BiPhoneCall className="text-2xl h-[40px] w-[40px] rounded-md text-white bg-primary hover:bg-primary/90 p-2"/>
                     <p>Talk to us</p>
-                    <p>+91 1234567890</p>
+                    <p>+91 9305813469</p>
                   </div>
                 </li>
                 

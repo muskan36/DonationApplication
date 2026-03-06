@@ -2,33 +2,39 @@ import React from 'react'
 import { FaFacebook, FaInstagram, FaLinkedin, FaLocationArrow, FaMobileAlt } from 'react-icons/fa';
 import FooterLinks from './FooterLinks';
 
-const importantLinks =[
-    {
-        name: "Home",
-    },
-    {
-        name:"About",
-    },
-    {
-        name:"Service",
-    },
-    {
-        name:"Login",
-    }
+const importantLinks = [
+  {
+    name: "Home",
+    link: "/",
+  },
+  {
+    name: "About",
+    link: "/about",
+  },
+  {
+    name: "Donate",
+    link: "/donate",
+  },
+  {
+    name: "Contact Us",
+    link: "/contact",
+  },
 ];
 
 const Links = [
-    {
-        name:"Privacy Policy",
-    },
-    {
-        name:"Services",
-    },
-    {
-        name:"About Us",
-    },
+  {
+    name: "Privacy Policy",
+    link: "/privacy",
+  },
+  {
+    name: "Terms & Conditions",
+    link: "/terms",
+  },
+  {
+    name: "Refund Policy",
+    link: "/refund",
+  },
 ];
-
 
 const Footer = () => {
   return (
@@ -39,9 +45,9 @@ const Footer = () => {
                 <div className='px-4 py-8'>
                     <h1 className='mb-3 text-justify text-xl sm:text-left sm:text-3xl'>
                         <a href="/#home" className='uppercase'>
-                        E & A 
+                        Eco
                             <span className='inline-block font-bold text-primary '>
-                              Protection Fund
+                              & Animal Protection Initiative
                             </span>
                         </a>
                     </h1>
@@ -54,7 +60,7 @@ const Footer = () => {
                     </div>
                      <div className='flex items-center gap-3 mt-2'>
                       <FaMobileAlt />
-                      <p>+01 235 467 1098</p>
+                      <p>+91 9305813469</p>
                   </div>
                 </div>
                 <div className='grid grid-cols-2 sm:grid-cols-3 md:pl-10 col-span-2'>
@@ -97,7 +103,8 @@ const Footer = () => {
             {/* footer copyright section */}
             <div className='bottom-footer'>
                 <p className='border-t-2 border-gray-300/50 py-6 text-center'>
-                    copyright © 2025. All rights reserved.
+                  © 2026 Eco & Animal Protection Initiative. All Rights Reserved.
+                  Developed by Ritika Yadav
                 </p>
             </div>
            
