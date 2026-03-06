@@ -1,27 +1,33 @@
-const express= require("express");
+const path = require("path");
+require("dotenv").config({ path: path.join(__dirname, ".env") });
+
+const express = require("express");
 const cors = require("cors");
-const app = express();
 const helmet = require("helmet");
-require("dotenv").config();
-app.use(cors());
+
+const app = express();
+
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "http://localhost:5174",
+    "http://localhost:5175",
+    "https://donation-application.vercel.app"
+  ],
+  methods: ["GET", "POST"],
+}));
 app.use(express.json());
 app.use(helmet());
 
-const home = require("./src/routes/home.routes");
 const checkout = require("./src/routes/checkout.routes");
-app.use("/api/v1", home);
 app.use("/api/v1", checkout);
 
-
-app.get("/",(req,res) => {
- res.send("API is working...");
+app.get("/", (req, res) => {
+  res.send("API is working...");
 });
 
-app.listen(process.env.PORT || 8000, () =>{
-    console.log("server is running on port 8000");
+// Add this to debug
+app.listen(process.env.PORT || 8000, () => {
+  console.log("KEY:", process.env.RAZORPAY_KEY_ID);
+  console.log("server is running on port 8000");
 });
-
-/*app.listen(process.env.PORT || 8000, () => {
-  console.log(`Server is running on http://localhost:${process.env.PORT || 8000}`);
-});*/
-

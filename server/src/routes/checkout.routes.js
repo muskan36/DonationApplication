@@ -1,6 +1,8 @@
-const router = require("express").Router();
-const { checkout } =   require("../controllers/checkout.controller")
+const express = require("express");
+const router = express.Router();
+const { createOrder, saveDonation } = require("../controllers/checkout.controller");
 
-router.post("/checkout", checkout);
+router.post("/create-order", createOrder);
+router.post("/save-donation", saveDonation);
+
 module.exports = router;
-
